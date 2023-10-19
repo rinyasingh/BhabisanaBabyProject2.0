@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #0CC0DF;
   --color-secondary: #37373f;
 }
 
@@ -178,7 +178,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ec2727;
+  background: #0CC0DF;
   color: #fff;
 }
 
@@ -271,7 +271,7 @@ section {
 .header .logo h1 {
   font-size: 28px;
   font-weight: 700;
-  color: #000;
+  color: #B89FFF;
   margin: 0;
   font-family: var(--font-secondary);
 }
@@ -361,7 +361,9 @@ section {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  .navbar a:hover:before,
+  .navbar a:hover:before{
+    background-color: #0CC0DF;
+  }
   .navbar li:hover>a:before,
   .navbar .active:before {
     visibility: visible;
