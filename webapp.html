@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>You and Your Baby: Co-designing an ECD Content Delivery System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  -->
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.9.1
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h2 class="logo"><a href="index.html"><b>ECD</b></a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="webportal.html">Web Portal</a></li>
+          <li><a class="nav-link scrollto" href="webapp.html">Web App</a></li>
+          <li><a class="nav-link scrollto o" href="appbackend.html">Mobile App Backend</a></li>
+          <li><a class="nav-link scrollto o" href="appfront.html">Mobile App Frontend</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Web App</h1>
+          <h2>Providing an interface for Bhabhisana parents to login, or guests to visit, and view their ECD Content.</h2>
+          <br><a href="https://youandyourbaby.bhabhisana.org.za" target="_blank">youandyourbaby.bhabhisana.org.za</a>
+        </div>
+      </div>
+
+      <div class="mobile-flex">
+            <img src="assets/img/portfolio/Website.png" width="900" alt="" style="border: 1px solid #000">
+      </div>
+
+      <h2>Introduction and Context</h2>
+      <p> Bhabhisana parents had extremely limited space on their phones, confirmed by a staff member who said 
+        "they often can’t download a WhatsApp video we send them", which highlighted the purpose of the web app. Further motivation can be noted with how Bhabhisana staff preferred the web based interface opposed to sending their videos over WhatsApp - which was more manual and time-consuming.
+        This web app is built on a WordPress installation within a CloudWays server. All development and functionality is 
+        customized through Oxygen Builder codeblocks in PHP, HTML and CSS. This allowed the fine-grain control 
+        needed when accessing information within the wp databases. Below is a high level overview of Web App 
+        with relation to the implemented system.
+        </p>
+        <img src="assets/img/portfolio/archportal.png" class="sixty" alt=""><br><br><p><b>The key aims of the web app were as follows:</b></p>
+        <ul>
+          <li>Authenticate Users.</li>
+          <li>Display ECD Content based on Public vs Logged In User Permissions.</li>
+          <li>Display and Filter per Category and Language.</li>
+          <li>Assigned Content only viewable for Assigned Users.</li>
+          <li>Lightweight and Usable.</li>
+        </ul>
+
+        <h2>Methodology</h2>
+        <p>As highlighted within the home page, a co-design based scrum approach was our project management. Sessions conducted with Bhabhisana parents and UCT staff included workshops, focus groups, heuristic evalautions, and user (task) evaluations. A high level overview of our timeline and utilization of co-design sessions (and iterations) can be found <a href="time.html" target="_blank">here.</a></p>
+        
+      <h2>Authenticate Users</h2>
+        <p>All users can login via the "User Login" button which allows them to securely log into the WordPress website.</p>
+      <h2>Public vs Logged in User Permissions</h2>
+      <p> All ECD Content posts are displayed based on User permissions which is which posts they have been assigned. If a user is logged in, the system visibility status is altered: Prompts for a user to login are removed, a logout button is added, they are personally addressed by name, and they can see their "Assigned Content" category and posts - which is not available to guests. All assigned content posts are styled in a darker purple hue to ensure parents can easily differentiate between that and the public content. This was achieved through consistent category classification per post, within the code-blocks.</p>
+      <img src="assets/img/portfolio/asc.png" width="600" alt="" style="border: 1px solid #000">
+      <h2>Filtering per Category and Language</h2>
+        <p> Customized filtering of categories and languages works well within the website.</p>
+        <img src="assets/img/portfolio/ixh.png" width="600" alt="" style="border: 1px solid #000">
+
+      <h2>Displaying ECD Content Pages</h2>
+      <p>Each non-public ECD Content post is only displayed to that User if they are assigned it. 
+        To ensure integrity and safety of data, a rogue user is therefore not able to hard code a URL and view a specific category or post not assigned to their existing user profile. 
+        This integrity of the system was achieved through checking if they were assigned in PHP, and removing the section visibility through JavaScript and CSS.</p>
+      <h2>Results</h2>
+      <p> The website showed great usability within the Bhabhisana community. A fully responsive website across all screen sizes and mobile phones exists. The choice of Oxygen Builder, and custom coding functionality, has resulted in a lean web app. The website has an average page size of 170 KB and loads within 1.3 seconds. <br> 
+        This was supported by 19 unique log-ins from parents within the first 2 weeks of evaluations. After these logins, 
+        parents expressed that they were very proud that their efforts in the workshops conducted across the past two years have culminated into something that is tangible and so useful to them.</p>
+
+        <img src="assets/img/portfolio/Parents.jpg" width="600" alt="">
+    <p class="fst-italic">Final workshop with Bhabhisana Staff & Parents</p></div>
+
+
+
+  </section><!-- End Hero -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
