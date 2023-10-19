@@ -1571,7 +1571,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: #1f1f24;
+  background-color: #442D82;
   padding: 50px 0;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1656,11 +1656,11 @@ section {
   color: #fff;
 }
 
+
+.image-medium {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Automatically calculate the height to maintain aspect ratio */
+
 .linkedin-icon {
   color: #442D82; /* Change this to your desired color */
-}
-
-.icon-medium {
-  width: 120px;
-  height: auto;
 }
