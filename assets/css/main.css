@@ -1655,3 +1655,12 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+.linkedin-icon {
+  color: #442D82; /* Change this to your desired color */
+}
+
+.icon-medium {
+  width: 120px;
+  height: auto;
+}
