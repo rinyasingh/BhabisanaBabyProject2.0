@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>You and Your Baby: Co-designing an ECD Content Delivery System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  -->
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.9.1
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h2 class="logo"><a href="index.html"><b>ECD</b></a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="webportal.html">Web Portal</a></li>
+          <li><a class="nav-link scrollto" href="webapp.html">Web App</a></li>
+          <li><a class="nav-link scrollto o" href="appbackend.html">Mobile App Backend</a></li>
+          <li><a class="nav-link scrollto o" href="appfront.html">Mobile App Frontend</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Mobile App Frontend</h1>
+          <h2>Providing an interface between Bhabhisana staff and parents.</h2>
+        </div>
+      </div>
+
+      <div class="mobile-flex">
+        <img src="assets/img/portfolio/ECDportrait.png" class="left-img" width="200" alt="">
+        <img src="assets/img/portfolio/ecd-app.png" class="right-img" width="200" alt="">
+      </div>
+
+      <h2>Context Background</h2>
+      <p>Bhabisana Baby Project(BBP), the Non Governmental Organisation sought to assist caregivers in poor communities
+        to meet fundamental needs, however, they required a user-friendly way to easily distribute and manage
+        availability of digital content and resources. In this research we utilised results from research done by CoMaCH
+        Project-co-designing for Maternal and Child Health in collaboration with BBP in building out the system and
+        providing content needed. The aim of this research is to explore an effective approach of ECD content
+        distribution to parents in resource-constrained communities.<br>
+        The mobile application’s primary functionality serves as an interface between the BBP staff and parents. In this
+        project we develop a native Android Kotlin application for parents and caregivers from poor and resource
+        constrained communities. The project aimed to develop and conduct usability studies on a native Android mobile
+        application that would assist the BBP staff in distributing custom curated ECD content. </p>
+      <!-- <img src="assets/img/portfolio/mobileScreens.png" width="500px" alt=""> -->
+      <div class="mobile-flex">
+        <img src="assets/img/portfolio/overallsysarchsuvanth.png" width="500" alt="">
+      </div>
+      <div class="mobile-flex">
+          <p class="fst-italic">Overall System Architecture Components</p>
+      </div>
+
+
+
+
+      <h2>Overview of Mobile Application Development</h2>
+      <p>A three phased iterative development approach was followed. Each successive version incorporated the feedback received through stakeholder meetings and user workshops.</p>
+      <h3>Iteration 1</h3>
+      <p>The first iteration contained unprocessed ECD web portal content, pdf article viewer, and a facilities map search. The mobile application retrieved post content via a SQL connection to the web portals database. The content was streamed from the hosted media files and was displayed through the native Android video view. Users were able to view a base set of PDF articles. The facilities search feature was initially implemented as an activity were users would create their own maps, placing markers on locations for later viewing.</p>
+      <div class="mobile-flex">
+        <img src="assets/img/portfolio/fullv1.png" width="500" alt="">
+      </div>
+      <div class="mobile-flex">
+          <p class="fst-italic">Iteration 1 based on CoMaCH co-design activities</p>
+      </div>
+      <h3>Iteration 2</h3>
+      <p>The second iteration added the capabilities to download content and save media files to local storage. This ensured that the app remained usable during limited internet connectivity. The web portal content fetched was also pre-processed in this iteration to ensure that content was presented in an interpretable format. The search feature was implemented, however, it only returned exact query matches. The facilities search was refined to show users a list of curated local amenities and contact details of support structures across Western Cape. The creation of user maps was removed as it was quite cumbersome and didn’t meet the requirements of the intended functionality. User authentication was added to this iteration and allowed users to login and authenticate themselves. It allowed users to sync/download content related to their profile. The user interface was updated to be fully responsive in portrait and landscape orientations. The design was improved making it visually appealing and aligned with the BBP branding. </p>
+      <h3>Iteration 3</h3>
+      <p>In the third iteration filtering and searching of data was improved significantly. Users were now able to filter posts by assigned category. The search functionality no longer required exact matches. Communication of system status was improved through the use of snackbar notifications which explains changes that occur in the system. Contextual activity based help was implemented to ensure that users were able to easily recover from erroneous/unfavourable states.</p>
+      <div class="mobile-flex">
+        <img src="assets/img/portfolio/fullv3.png" width="500" alt="">
+      </div>
+      <div class="mobile-flex">
+          <p class="fst-italic">Final Deployed Application</p>
+      </div>
+      <h2>Results</h2>
+      <p>The mobile application has been deployed on the Playstore and fulfils the functional and non-functional
+        requirements of both the supervisor and core stakeholders i.e. Bhabisana Baby Project and CoMaCH.The application
+        is intuitive, updates dynamically, and optimally mirrors the webportal in resource constrained environments. The
+        system was evaluated through parent workshops, heuristic evaluations and system tests. The results are outlined
+        below.</p>
+
+      <h3>Workshops</h3>
+      <p>The feedback from workshops indicate that parents learnt the application easily and needed little to no
+        assistance when attempting to complete tasks. The application leveraged affordances of other commonly used
+        native Android applications. During debriefs, parents described the application as being minimalistic, usable
+        and meeting their needs effectively. Observations showed that parents with older children found the application
+        less useful as they had already learnt most of what the base content covered and were familiar with it from
+        experience. They did, however, see the value of the application - Parent 3: <i>My baby is now three so I know
+          most of this, but this app would have made life so much easier back then.</i> During the debriefing session
+        parents and staff expressed feelings of pride and joy - Parent 4: <i>I am so proud to see that my work from the
+          past year in these workshops has made this app.</i></p>
+
+      <h3>Heuristic evaluation</h3>
+      <p>Feedback was obtained from two of the core stakeholders from the CoMaCH project and two HCILab students using
+        Jakob Nielsen’s 10 usability heuristics as an evaluation guideline. All participants have conducted research in
+        the space of HCI and ICT4D. The heuristic evaluation aided in identifying key issues with the mobile
+        application. The heuristic evaluation revealed issues with regards to communication of system status and how to
+        interact with certain user-interface components. All the issues identified by the experts were resolved in the
+        final deployed application.</p>
+
+      <h3>System Testing</h3>
+      <p>The testing methodology used allowed our test to have a large amount of coverage and assisted greatly in
+        delivering a maintainable bug free system. The mobile application was tested through three approaches:</p>
+      <ul>
+        <li>Code based Espresso Framework testing</li>
+        <li>Playstore automated testing</li>
+        <li>Quality assurance testing conducted by experienced developers</li>
+      </ul>
+      <p>The Playstore and Espresso framework testing proved to be rather useful when testing our software before
+        deployment as it tested our application with an exhaustive set of inputs and various devices. Whilst the
+        automated code based testing mimicked user interactions effectively, the involvement of participants performing
+        quality assurance tests was beneficial. The mindset of our testers seemed to assist greatly in discovering
+        scenarios that would break the application or enter an unrecoverable state. Their experience in Mobile design
+        and development projects certainly helped as this aided in finding flaws that may have been overlooked by the
+        team. <a href="assets/img/submissions/suvanth/testDocMobileApp.pdf" target="_blank">(Detailed test
+          documentation)</a></p>
+
+      <h2>Conclusion</h2>
+      <p>All requirements and expectations of the stakeholders were effectively met. On project completion the NGO staff
+        and parents were quite happy and many expressed that they were very proud that their efforts in the workshops
+        conducted across the past two years have culminated into something that is tangible. The application does
+        simplify the NGOs workflow of distributing content to their parents. The application also makes the task of
+        finding personally relevant and optimistic ECD resources much easier for parents to source. Future work on the
+        mobile application could include adding more fine grained control to the content synchronisation functionality
+        and building out a more robust search functionality that leverages sophisticated information retrieval and
+        natural language processing techniques in order to increase the relevancy of results. The application developed
+        appears to be a success, however, the lack of user studies/evaluations conducted in an uncontrolled environment
+        is a major limiting factor. The application needs to be used at scale over a longer duration before we may claim
+        its success.</p>
+      <div class="mobile-flex">
+        <img src="assets/img/portfolio/Parents.jpg" width="500" alt="">
+      </div>
+      <div class="mobile-flex">
+          <p class="fst-italic">Final workshop with Bhabhisana Staff & Parents</p>
+      </div>
+
+
+    </div>
+
+
+  </section><!-- End Hero -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>You and Your Baby: Co-designing an ECD Content Delivery System</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  -->
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: OnePage - v4.9.1
+  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h2 class="logo"><a href="index.html"><b>ECD</b></a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="webportal.html">Web Portal</a></li>
+          <li><a class="nav-link scrollto" href="webapp.html">Web App</a></li>
+          <li><a class="nav-link scrollto o" href="appbackend.html">Mobile App Backend</a></li>
+          <li><a class="nav-link scrollto o" href="appfront.html">Mobile App Frontend</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>Web Portal</h1>
+          <h2>Providing an interface for Bhabhisana staff to create and assign ECD Content to their Parents.</h2>
+        </div>
+      </div>
+
+      <div class="mobile-flex">
+            <img src="assets/img/portfolio/WebPortal.png" width="900" alt="">
+      </div><div class="mobile-flex">
+      <p class="fst-italic">Dashboard Interface for Bhabhisana Staff</p></div>
+      <h2>Introduction and Context</h2>
+      <p> The Bhabhisana staff had an excited reaction to the web portal being accessible through the web browser, opposed to a local application. 
+        "We are constantly on the move" highlights the convenience this portal provides by being accessible remotely. 
+        This web portal was built on a WordPress base with custom functionality and features developed 
+        through utilizing Pods, Oxygen Builder, and developing a custom plugin whcih used HTML, PHP and CSS. Below is a high level overview of Web Portal with relation to the implemented system.
+        </p>
+        <img src="assets/img/portfolio/archportal.png" class="sixty" alt="">
+        <br><br><p><b>The key aims of the web portal were as follows:</b></p>
+        <ul>
+          <li> Create ECD Content Posts.</li>
+          <li>Create User (Parent) Profiles.</li>
+          <li>Manage and Filter ECD Content per Category and Language.</li>
+          <li>Assign Users to ECD Content.</li>
+          <li>Custom REST API Endpoint for Mobile Application to retrieve data.</li>
+        </ul>
+        <h2>Methodology</h2>
+        <p>As highlighted within the home page, a co-design scrum approach was our project management. Sessions conducted with Bhabhisana staff included workshops, focus groups, and user (task) evaluations. A high level overview of our timeline and utilization of co-design sessions (and iterations) can be found <a href="time.html" target="_blank">here.</a></p>
+        <h2>Create User Profiles and ECD Content</h2>
+      <p> The creation and management of pages, posts and users is a native functionality in WordPress. 
+        Pods was used to create a Custom Post Type (CPT) called "ECD Content". The further customization of ECD Content came in the form of adding a custom field, "Assigned Users", to the CPT. 
+        Likewise, there was a custom field, "Assigned Posts", added to the User post-type. Thereafter, native categories and tags where used, where functionality was modified to suit it towards our requirements. 
+        The non functional requirement of scalability is easily managed within the WordPress ecosystem, additional ECD Content and Users in large sets is managed well. 
+        Error handling, input validation, and visibility of system status is well addressed within the CMS backend - much to the satisfaction of Bhabhisana staff, highlighting the robust usage of the system. </p>
+      <h2>Assignment of Users to ECD Content</h2>
+      <p>The "Assigned Posts" custom field displays an interface to assign ECD posts to a User. 
+        The "Assigned Users" custom field displays an interface to assign User’s to an ECD Content post. 
+        A bi-directional relationship exists between these fields. This means staff can perform the same task through either interface with no loss of data, 
+        which highlights the reliability and integrity of the system. The input of our custom fields, "Assigned Posts" and "Assigned User", are stored as metadata within wp_usermeta and wp_postmeta respectively. 
+        The mobile app fetches this information from the custom REST API endpoint that was created through the developed plugin. </p>
+      <img src="assets/img/portfolio/postInterface.png" class="sixty" alt=""><p class="fst-italic">Assign Users, Language and Category.</p>
+      <img src="assets/img/portfolio/assignpostToUsers.png" class="sixty" alt=""><p class="fst-italic">Assign Posts to a Specfiic User Profile.</p>
+      <h2>Custom Plugin to create REST API Endpoint</h2>
+      <p> Two additional endpoints were created for the mobile app to fetch this data. 
+        One endpoint was used for basic user authentication for the mobile app. 
+        This endpoint exists at ecd/v1/.../... where the input is validated within the database to ensure the username exists.
+        The endpoint to retrieve assigned content for a user is at ecd/v1/.../. This endpoint merges the public content, which is all ECD Content assigned to the "Public" User, and additional ECD Content assigned to the provided username. 
+        Only English content is displayed within the app, so only English content is made available to fetch. This functionality was implemented through a custom plugin, and fulfills the key non-functional requirement of interoperability.</p>
+        <h2>Dashboard (Portal) Customization</h2>
+        <p>The custom plugin abstracts all unnecessary WordPress options and adds user help with quick links and online documentation. 
+          This allows for a streamlined dashboard where the Bhabhisana staff have no access over anything besides ECD Content and User management. 
+          Additionally to using a learnable and fun system, the portal is quick with executing key functions within the browser.</p>
+        <h2>Results</h2>
+        <p> Bhabhisana staff acknowledged "I am not technically advanced", but "I can get used to this and will gain confidence", which highlights the positive mindset they had to the usability of the system. On conclusion of the sessions with Bhabhisana staff, a usability evaluation was conducted to highlight the usability and satisfaction of the web portal. <br>The following results were collected:</p>
+        <img src="assets/img/portfolio/findings.png" class="thirty" alt=""><p class="fst-italic">
+        <p>The satisfaction results show we have created a system the stakeholders desired, and it performs the required functionality as they anticipated. Since inception of the live domain (26/08), the staff created a total of 19 Users and 1 ECD Content, assigning a cumulative 28 ECD Content to Users. In reference to our key aims and success factors, we can therefore consider this implementation a success as Bhabhisana staff are comfortable using the system that satisfies their key aims.</p>
+    </div>
+
+
+  </section><!-- End Hero -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
