@@ -63,60 +63,53 @@
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h1>Web App</h1>
-          <h2>Providing an interface for Bhabhisana parents to login, or guests to visit, and view their ECD Content.</h2>
-          <br><a href="https://youandyourbaby.bhabhisana.org.za" target="_blank">youandyourbaby.bhabhisana.org.za</a>
-        </div>
+        <!-- <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start"> -->
+          <h2>Web App</h2>
+          <h3>Providing an interface for Bhabhisana parents to login, or guests to visit, and view their ECD Content. A web portal allowing the Bhabhisana Baby Project staff to upload content, manage users and modify these settings.</h3>
+          <br><a href="http://bbp-1.cs.uct.ac.za/" target="_blank">bbp-1.cs.uct.ac.za</a>
+        <!-- </div> -->
       </div>
 
       <div class="mobile-flex">
-            <img src="assets/img/portfolio/Website.png" width="900" alt="" style="border: 1px solid #000">
+            <img src="assets/img/web.jpg" width="800" alt="" style="border: 1px solid #000">
       </div>
 
-      <h2>Introduction and Context</h2>
-      <p> Bhabhisana parents had extremely limited space on their phones, confirmed by a staff member who said 
-        "they often can’t download a WhatsApp video we send them", which highlighted the purpose of the web app. Further motivation can be noted with how Bhabhisana staff preferred the web based interface opposed to sending their videos over WhatsApp - which was more manual and time-consuming.
-        This web app is built on a WordPress installation within a CloudWays server. All development and functionality is 
-        customized through Oxygen Builder codeblocks in PHP, HTML and CSS. This allowed the fine-grain control 
-        needed when accessing information within the wp databases. Below is a high level overview of Web App 
-        with relation to the implemented system.
-        </p>
-        <img src="assets/img/portfolio/archportal.png" class="sixty" alt=""><br><br><p><b>The key aims of the web app were as follows:</b></p>
-        <ul>
-          <li>Authenticate Users.</li>
-          <li>Display ECD Content based on Public vs Logged In User Permissions.</li>
-          <li>Display and Filter per Category and Language.</li>
-          <li>Assigned Content only viewable for Assigned Users.</li>
-          <li>Lightweight and Usable.</li>
-        </ul>
+      <h1>Introduction and Context</h1>
+      <p>The previous web system was developed using WordPress. WordPress allows users to create, manage and publish digital content such as text, images and videos.
+      </p>
+        <!-- <img src="assets/img/portfolio/archportal.png" class="sixty" alt=""> -->
+      <p><b>The key features of the system were:</b></p>
+      <ul>
+        <li>The staff-facing web portal performed the functionality of allowing web portal users to create and manage content and users, emphasising content assignment functionality.</li>
+        <li>The user-facing web application allows users to authenticate, view content based on categories and languages, and access assigned content. The mobile application was designed to have responsiveness, usability, and coherent branding features. </li>
+      </ul>
 
-        <h2>Methodology</h2>
-        <p>As highlighted within the home page, a co-design based scrum approach was our project management. Sessions conducted with Bhabhisana parents and UCT staff included workshops, focus groups, heuristic evalautions, and user (task) evaluations. A high level overview of our timeline and utilization of co-design sessions (and iterations) can be found <a href="time.html" target="_blank">here.</a></p>
+      <p><b>The problems identified with the 2022 deployment:</b></p>
+      <ul>
+        <li>The staff reported that it was difficult to use the web portal due to its unintuitive interface.</li>
+        <li>The quality of JSON response returned by the WordPress API endpoints was large and poorly structured due to the lack of customisability that WordPress allows for API design. String manipulation needed to be done by the mobile application to extract file links.</li>
+        <li>There was a lack of proper user authentication. Users were only authenticated based on whether the username existed. When content was retrieved for the mobile application, only the user ID was used. There was no password check or session validation performed.</li>
+      </ul>
+
+      <h1>Methodology</h1>
+      <p>The project management methodology used for this project was an
+        agile scrum methodology. The reasoning behind this was to ensure
+        the project’s iterative development and hold ourselves accountable
+        to complete our tasks. This was important as the nature of the
+        project divisions was highly coupled.</p>
         
-      <h2>Authenticate Users</h2>
+      <!-- <h2>Authenticate Users</h2>
         <p>All users can login via the "User Login" button which allows them to securely log into the WordPress website.</p>
       <h2>Public vs Logged in User Permissions</h2>
       <p> All ECD Content posts are displayed based on User permissions which is which posts they have been assigned. If a user is logged in, the system visibility status is altered: Prompts for a user to login are removed, a logout button is added, they are personally addressed by name, and they can see their "Assigned Content" category and posts - which is not available to guests. All assigned content posts are styled in a darker purple hue to ensure parents can easily differentiate between that and the public content. This was achieved through consistent category classification per post, within the code-blocks.</p>
       <img src="assets/img/portfolio/asc.png" width="600" alt="" style="border: 1px solid #000">
-      <h2>Filtering per Category and Language</h2>
-        <p> Customized filtering of categories and languages works well within the website.</p>
-        <img src="assets/img/portfolio/ixh.png" width="600" alt="" style="border: 1px solid #000">
 
       <h2>Displaying ECD Content Pages</h2>
-      <p>Each non-public ECD Content post is only displayed to that User if they are assigned it. 
-        To ensure integrity and safety of data, a rogue user is therefore not able to hard code a URL and view a specific category or post not assigned to their existing user profile. 
-        This integrity of the system was achieved through checking if they were assigned in PHP, and removing the section visibility through JavaScript and CSS.</p>
-      <h2>Results</h2>
-      <p> The website showed great usability within the Bhabhisana community. A fully responsive website across all screen sizes and mobile phones exists. The choice of Oxygen Builder, and custom coding functionality, has resulted in a lean web app. The website has an average page size of 170 KB and loads within 1.3 seconds. <br> 
-        This was supported by 19 unique log-ins from parents within the first 2 weeks of evaluations. After these logins, 
-        parents expressed that they were very proud that their efforts in the workshops conducted across the past two years have culminated into something that is tangible and so useful to them.</p>
+      <p>Each non-public ECD Content post is only displayed to that User if they are assigned it.</p> -->
 
-        <img src="assets/img/portfolio/Parents.jpg" width="600" alt="">
-    <p class="fst-italic">Final workshop with Bhabhisana Staff & Parents</p></div>
-
-
-
+      <h1>Results</h1>
+      <p>The new system was built using the Django framework, featuring a Model-View-Template (MVT) pattern and Object-Relational Mapping (ORM) layer. The system's architecture is divided into apps, each with specific functionality, and the user interface is created using HTML templates and Bootstrap. The system emphasizes user authentication, security, and database design, using a PostgreSQL database and Django's ORM. The system is currently hosted on a Unix server with Apache and Docker containers.</p>
+      <p>The usability tests conducted throughout the project confirmed that the primary design objective of creating a user-centric system was achieved. Feedback from BBP staff participating in these tests indicated that the new web portal is a significant improvement over the previous one. They described it as more intuitive, with a cleaner and simpler interface, and one staff member even praised its appearance and ease of use.</p>
   </section><!-- End Hero -->
 
   <div id="preloader"></div>
