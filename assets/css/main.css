@@ -1660,7 +1660,17 @@ section {
 .image-medium {
   width: 100px; /* Adjust the width as needed */
   height: auto; /* Automatically calculate the height to maintain aspect ratio */
-
+}
 .linkedin-icon {
   color: #442D82; /* Change this to your desired color */
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
 }
