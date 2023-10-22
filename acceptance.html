@@ -27,7 +27,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: OnePage - v4.9.1
@@ -40,86 +40,95 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h2 class="logo"><a href="index.html"><b>ECD</b></a></h2>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0 custom-link">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h2><b>You and Your Baby 2.0</b<></h2>
+      </a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="webportal.html">Web Portal</a></li>
-          <li><a class="nav-link scrollto" href="webapp.html">Web App</a></li>
-          <li><a class="nav-link scrollto o" href="appbackend.html">Mobile App Backend</a></li>
-          <li><a class="nav-link scrollto o" href="appfront.html">Mobile App Frontend</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
 
+          </ul>
+        </nav>
+      
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 col-lg-9 text-center">
-          <h1>Web Portal</h1>
-          <h2>Providing an interface for Bhabhisana staff to create and assign ECD Content to their Parents.</h2>
+  <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2>Mobile App Acceptance</h2>
+          <h3>An investigation into the response that caregivers from the BBP community and Sweetwaters had to the mobile app.</h3>
         </div>
+        
       </div>
-
       <div class="mobile-flex">
-            <img src="assets/img/portfolio/WebPortal.png" width="900" alt="">
-      </div><div class="mobile-flex">
+        <img src="assets/img/sw-workshop.jpeg" width="300" style="float:right" alt="">
+  </div>
+      <div class="mobile-flex">
+
       <p class="fst-italic">Dashboard Interface for Bhabhisana Staff</p></div>
-      <h2>Introduction and Context</h2>
-      <p> The Bhabhisana staff had an excited reaction to the web portal being accessible through the web browser, opposed to a local application. 
-        "We are constantly on the move" highlights the convenience this portal provides by being accessible remotely. 
-        This web portal was built on a WordPress base with custom functionality and features developed 
-        through utilizing Pods, Oxygen Builder, and developing a custom plugin whcih used HTML, PHP and CSS. Below is a high level overview of Web Portal with relation to the implemented system.
-        </p>
-        <img src="assets/img/portfolio/archportal.png" class="sixty" alt="">
-        <br><br><p><b>The key aims of the web portal were as follows:</b></p>
+      <h3>Introduction and Context</h3>
+      <p> As technology has developed and has become more important in daily use, a variety of factors have been identified as influencing the acceptance of a technology by the users.
+          Users' motivations can be used by developers to improve the technology's design in an attempt to increase usage.
+          This study uses the Unified Theory of Acceptance-2 (UTAUT-2) to analyse the acceptance of the technology of these communities.  
+      </p>
+        <p><b>The key aims factors proposed by the UTAUT-2 as influencing users' usage of an application:</b></p>
         <ul>
-          <li> Create ECD Content Posts.</li>
-          <li>Create User (Parent) Profiles.</li>
-          <li>Manage and Filter ECD Content per Category and Language.</li>
-          <li>Assign Users to ECD Content.</li>
-          <li>Custom REST API Endpoint for Mobile Application to retrieve data.</li>
+          <li><b>Performance Expectancy: </b>The degree to which the user believes that the system will assist them reach their goals- whether job-related or otherwise.</li>
+          <li><b>Effort Expectancy: </b>The degree to which the user perceives the system as being easy to use.</li>
+          <li><b>Social Influence: </b>the degree to which the user perceives that other individuals who are important to them will react to their use of the system.</li>
+          <li><b>Facilitating Conditions: </b>The degree to which the user believes that organisational and technical infrastructure exists to support their use of the system.</li>
+          <li><b>Hedonic Motivation: </b>The enjoyment a user derives from using the technology.</li>
+          <li><b>Price Value: </b>The user's perceived overall benefit or loss as a
+            result of whatever monetary cost there is to using the system.</li>
+          <li><b>Habit: </b>The extent to which people learn to perform behaviours automatically.</li>
         </ul>
-        <h2>Methodology</h2>
-        <p>As highlighted within the home page, a co-design scrum approach was our project management. Sessions conducted with Bhabhisana staff included workshops, focus groups, and user (task) evaluations. A high level overview of our timeline and utilization of co-design sessions (and iterations) can be found <a href="time.html" target="_blank">here.</a></p>
-        <h2>Create User Profiles and ECD Content</h2>
-      <p> The creation and management of pages, posts and users is a native functionality in WordPress. 
-        Pods was used to create a Custom Post Type (CPT) called "ECD Content". The further customization of ECD Content came in the form of adding a custom field, "Assigned Users", to the CPT. 
-        Likewise, there was a custom field, "Assigned Posts", added to the User post-type. Thereafter, native categories and tags where used, where functionality was modified to suit it towards our requirements. 
-        The non functional requirement of scalability is easily managed within the WordPress ecosystem, additional ECD Content and Users in large sets is managed well. 
-        Error handling, input validation, and visibility of system status is well addressed within the CMS backend - much to the satisfaction of Bhabhisana staff, highlighting the robust usage of the system. </p>
-      <h2>Assignment of Users to ECD Content</h2>
+        Given the socioeconomic differences between the communities of the BBP's beneficiaries and the community of Sweetwaters, these factors are proposed to have varying levels of effect on the overall usage of that community of the mobile application.
+
+        <h3>Methodology</h3>
+        <p>
+          <h3>Workshops</h3>
+          To facilitate conversations between researchers and the communities where the application was deployed, a series of workshops were held. <br>
+          <b>BBP Workshop 1</b><br>
+          First, a workshop was held with BBP beneficiaries who had been using the app- with varying frequency- since its deployment in 2022.
+          This workshop provided researchers with key insights surrounding the issues with the previous application that rendered it unusable by the beneficiaries. 
+          Additionally, participants provided researchers with essential feedback surrounding requirements and usability issues.
+          <br>
+          <b>Sweetwaters</b><br>
+          Once this team's iteration of the mobile app had been prototyped, we held a workshop in Sweetwaters, KZN, with nine participants- all of whom were mothers or grandmothers.
+          As this group of participants had not been part of the initial co-design process between past students and the BBP, this workshop consisted of introducing the application to them, iliciting feedback and a content creation workshop.
+          This content creation was necessary as the lack of an NGO in this space to proliferate content meant that the focus shifted to the community creating their own videos.
+          <br>
+          <b></b>
+        </p>
+        <h3>Create User Profiles and ECD Content</h3>
+      <p>
+        
+      </h3>
       <p>The "Assigned Posts" custom field displays an interface to assign ECD posts to a User. 
-        The "Assigned Users" custom field displays an interface to assign User’s to an ECD Content post. 
-        A bi-directional relationship exists between these fields. This means staff can perform the same task through either interface with no loss of data, 
-        which highlights the reliability and integrity of the system. The input of our custom fields, "Assigned Posts" and "Assigned User", are stored as metadata within wp_usermeta and wp_postmeta respectively. 
-        The mobile app fetches this information from the custom REST API endpoint that was created through the developed plugin. </p>
-      <img src="assets/img/portfolio/postInterface.png" class="sixty" alt=""><p class="fst-italic">Assign Users, Language and Category.</p>
-      <img src="assets/img/portfolio/assignpostToUsers.png" class="sixty" alt=""><p class="fst-italic">Assign Posts to a Specfiic User Profile.</p>
-      <h2>Custom Plugin to create REST API Endpoint</h2>
-      <p> Two additional endpoints were created for the mobile app to fetch this data. 
-        One endpoint was used for basic user authentication for the mobile app. 
-        This endpoint exists at ecd/v1/.../... where the input is validated within the database to ensure the username exists.
-        The endpoint to retrieve assigned content for a user is at ecd/v1/.../. This endpoint merges the public content, which is all ECD Content assigned to the "Public" User, and additional ECD Content assigned to the provided username. 
-        Only English content is displayed within the app, so only English content is made available to fetch. This functionality was implemented through a custom plugin, and fulfills the key non-functional requirement of interoperability.</p>
-        <h2>Dashboard (Portal) Customization</h2>
+        
+      </p>
+      <h3>Custom Plugin to create REST API Endpoint</h3>
+      <p> 
+        
+      </p>
+        <h3>Dashboard (Portal) Customization</h3>
         <p>The custom plugin abstracts all unnecessary WordPress options and adds user help with quick links and online documentation. 
           This allows for a streamlined dashboard where the Bhabhisana staff have no access over anything besides ECD Content and User management. 
           Additionally to using a learnable and fun system, the portal is quick with executing key functions within the browser.</p>
-        <h2>Results</h2>
+        <h3>Results</h3>
         <p> Bhabhisana staff acknowledged "I am not technically advanced", but "I can get used to this and will gain confidence", which highlights the positive mindset they had to the usability of the system. On conclusion of the sessions with Bhabhisana staff, a usability evaluation was conducted to highlight the usability and satisfaction of the web portal. <br>The following results were collected:</p>
         <img src="assets/img/portfolio/findings.png" class="thirty" alt=""><p class="fst-italic">
         <p>The satisfaction results show we have created a system the stakeholders desired, and it performs the required functionality as they anticipated. Since inception of the live domain (26/08), the staff created a total of 19 Users and 1 ECD Content, assigning a cumulative 28 ECD Content to Users. In reference to our key aims and success factors, we can therefore consider this implementation a success as Bhabhisana staff are comfortable using the system that satisfies their key aims.</p>
+        <p>[1] Viswanath Venkatesh, Michael Morris, Gordon Davis, and Fred Davis. 2003. User Acceptance of Information Technology: Toward a Unified View. MIS Quarterly 27 (09 2003), 425–478. https://doi.org/10.2307/30036540</p>
     </div>
 
 
