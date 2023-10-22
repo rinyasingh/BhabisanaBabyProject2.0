@@ -1660,7 +1660,18 @@ section {
 .image-medium {
   width: 100px; /* Adjust the width as needed */
   height: auto; /* Automatically calculate the height to maintain aspect ratio */
-
+}
 .linkedin-icon {
   color: #442D82; /* Change this to your desired color */
+}
+
+.bbp-logo {
+  height: 50px;
+  width: 50px;
+  top: -30px;
+}
+.workshop-icon {
+  background-image: url("assets/img/icons/workshop-icon.png");
+  width: 50px;
+  height: 50px;
 }
