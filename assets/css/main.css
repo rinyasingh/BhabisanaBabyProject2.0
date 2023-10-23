@@ -787,7 +787,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jpg") center center;
+  background: linear-gradient(rgba(240, 240, 255, 0.5), rgba(240, 240, 255, 0.5)), center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -806,7 +806,8 @@ section {
 .stats-counter .stats-item span {
   font-size: 48px;
   display: block;
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
   font-weight: 700;
 }
 
@@ -816,7 +817,8 @@ section {
   font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
+  color: #000;
 }
 
 /*--------------------------------------------------------------
