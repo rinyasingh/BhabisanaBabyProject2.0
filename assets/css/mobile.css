@@ -2,11 +2,29 @@
     font-size: 36px; 
     color: #3498db; 
     font-weight: bold; 
-    
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  #heading2 {
+    font-size: 42px; 
+    color: #000000; 
+    font-weight: bold; 
+    justify-content: center; 
+    align-items: center; 
   }
 
 #photo_heading{
-  color: black
+  color: black;
+  
+  
+}
+
+#paragraph1{
+  justify-content: center; 
+  align-items: center;
+  font-weight: bold;
+
 }
 
   /*--------------------------------------------------------------
@@ -18,7 +36,7 @@
 
 .event1 .event-item {
   background-size: cover;
-  background-position: cente;
+  background-position: center;
   min-height: 1000px;
   padding: 30px;
 }
@@ -81,4 +99,161 @@
 
 .event1 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
+}
+
+/*----------------------------------------------------------------
+/* Apply styles to the section element */
+section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+/* Style the container div */
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the headings */
+h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+h3 {
+  font-size: 20px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Style the unordered list */
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Style list items */
+li {
+  margin-bottom: 10px;
+}
+
+/* Style the paragraph text */
+p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Style the italic text */
+.fst-italic {
+  font-style: italic;
+}
+
+
+/* Apply styles to links if needed */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*----------------------------------------------------------------
+/* Apply styles to the testing section */
+#testing {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+/* Style the container for testing content */
+.testing-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Style the left side for text content */
+.testing-text {
+  width: 60%;
+  padding-right: 20px; /* Add some spacing between text and image */
+}
+
+/* Style the right side for the image */
+.testing-image {
+  width: 40%;
+}
+
+/* Style headings and lists inside the testing content */
+.testing-text h3 {
+  font-size: 20px;
+  color: #555;
+  margin-top: 20px;
+}
+
+.testing-text ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.testing-text li {
+  margin-bottom: 10px;
+}
+
+/* Apply styles to the testing image */
+.testing-image img {
+  max-width: 100%;
+  display: block;
+}
+
+/*----------------------------------------------------------------
+/* Apply styles to the architecture section */
+#architecture {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+/* Style the container for architecture content */
+.architecture-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Style the left side for the image */
+.architecture-image {
+  width: 40%;
+}
+
+/* Style the right side for text content */
+.architecture-text {
+  width: 60%;
+  padding-left: 20px; /* Add some spacing between image and text */
+}
+
+/* Style the headings and paragraphs inside the architecture content */
+.architecture-text h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.architecture-text p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Apply styles to the architecture image */
+.architecture-image img {
+  max-width: 100%;
+  display: block;
 }

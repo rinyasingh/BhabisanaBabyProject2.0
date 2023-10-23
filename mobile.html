@@ -67,7 +67,7 @@
       <div class="row justify-content-between gy-5">
         <div
           class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h1>You and Your Baby Mobile Application</h1>
+          <h1 id = "heading2" >You and Your Baby Mobile Application</h1>
         </div>
       </div>
       <div class="mobile-flex">
@@ -88,6 +88,18 @@
       <li>Community members decided on the functional and non functional requirements</li>
       <li>TCommunity members gave input on design elements such as colours and choice of images</li>
     </ul>
+    <h3>Iteration 1</h3>
+      <p>The first iteration contained unprocessed ECD web portal content, pdf article viewer, and a facilities map search. The mobile application retrieved post content via a SQL connection to the web portals database. The content was streamed from the hosted media files and was displayed through the native Android video view. Users were able to view a base set of PDF articles. The facilities search feature was initially implemented as an activity were users would create their own maps, placing markers on locations for later viewing.</p>
+      <div class="mobile-flex">
+        <img src="assets/img/portfolio/fullv1.png" width="500" alt="">
+      </div>
+      <div class="mobile-flex">
+          <p class="fst-italic">Iteration 1 based on CoMaCH co-design activities</p>
+      </div>
+      <h3>Iteration 2</h3>
+      <p>The second iteration added the capabilities to download content and save media files to local storage. This ensured that the app remained usable during limited internet connectivity. The web portal content fetched was also pre-processed in this iteration to ensure that content was presented in an interpretable format. The search feature was implemented, however, it only returned exact query matches. The facilities search was refined to show users a list of curated local amenities and contact details of support structures across Western Cape. The creation of user maps was removed as it was quite cumbersome and didn’t meet the requirements of the intended functionality. User authentication was added to this iteration and allowed users to login and authenticate themselves. It allowed users to sync/download content related to their profile. The user interface was updated to be fully responsive in portrait and landscape orientations. The design was improved making it visually appealing and aligned with the BBP branding. </p>
+      <h3>Iteration 3</h3>
+      <p>In the third iteration filtering and searching of data was improved significantly. Users were now able to filter posts by assigned category. The search functionality no longer required exact matches. Communication of system status was improved through the use of snackbar notifications which explains changes that occur in the system. Contextual activity based help was implemented to ensure that users were able to easily recover from erroneous/unfavourable states.</p>
     </div>
   </section>
 
@@ -164,49 +176,62 @@
 </div>
 </section>
 
-  <section>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
+<section id="architecture" class="hero d-flex align-items-center section-bg">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
     <h1 id="heading1"> Architecture</h1>
-    <p>The mobile application uses a standard Model View Controller design-pattern.
-      The mobile application uses three internal storage types: shared preferences to store user authentication data
-      during a session, cache to store media files temporarily during streaming, and internal file storage to store
-      downloaded content.
-      The architecture of the application is displayed below:</p>
-
-    <div class="mobile-flex">
-      <img src="assets/img/mobileArchitecture2023.jpg" width="350" alt="" style="border: 1px solid #000">
+    
+    <div class="architecture-content">
+      <div class="architecture-image">
+        <img src="assets/img/mobileArchitecture2023.jpg" width="350" alt="" style="border: 1px solid #000">
+      </div>
+      <div class="architecture-text">
+        <ul>
+          <li>Standard Model View Controller design-pattern</li>
+          <li>Three internal storage types</li>
+        <ul><li>Shared preferences to store user authentication data
+          during a session</li>
+          <li>Cache to store media files temporarily during streaming</li>
+          <li>Internal file storage to store
+            downloaded content</li></ul>
+        </ul>
+        
+      </div>
     </div>
   </div>
-  </section>
-
-
-<section id="hero" class="hero d-flex align-items-center section-bg">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-  <section>
-    <h1 id="heading1"> Testing</h1>
-    <h3>Software Testing</h3>
-    <ul>
-      <li>Unit tests</li>
-      <li>Integration tests</li>
-      <li>Network tests</li>
-    </ul>
-
-    <h3>User Testing</h3>
-    <ul>
-      <li>Cognitive waltkhrough at BBP, Cape Town</li>
-      <li>Cognitive walkthrough at HSRC, Sweetwaters, KZN</li>
-      <li>Heuristic evaluations</li>
-      <li>Business acceptance testing with BBP staff</li>
-    </ul>
-
-  </section>
-  </div>
 </section>
+
+  <section id="testing" class="hero d-flex align-items-center section-bg">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <h1 id="heading1"> Testing</h1>
+      
+      <div class="testing-content">
+        <div class="testing-text">
+          <h3>Software Testing</h3>
+          <ul>
+            <li>Unit tests</li>
+            <li>Integration tests</li>
+            <li>Network tests</li>
+          </ul>
+    
+          <h3>User Testing</h3>
+          <ul>
+            <li>Cognitive walkthrough at BBP, Cape Town</li>
+            <li>Cognitive walkthrough at HSRC, Sweetwaters, KZN</li>
+            <li>Heuristic evaluations</li>
+            <li>Business acceptance testing with BBP staff</li>
+          </ul>
+        </div>
+        <div class="testing-image">
+          <img src="assets/img/testingUser.jpeg" width="400" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section>
     <div class="container" data-aos="fade-up" data-aos-delay="100">
     <h1 id="heading1"> Deployment</h1>
-    <p>The application was deployed for official use at the end of September.
+    <p id = "paragraph1">The application was deployed for official use at the end of September.
       It was well received by the users. Usage data shows regular use by community members.
       The application has been subject to maintenance and bug fixes after deployment as part
       of a </p>
