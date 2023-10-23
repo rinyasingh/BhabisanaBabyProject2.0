@@ -75,10 +75,12 @@
       </div>
 
       <h1>Introduction and Context</h1>
-      <p>The previous web system was developed using WordPress. WordPress allows users to create, manage and publish digital content such as text, images and videos.
+      <p>This project outlines a continuous, collaborative effort between University
+        of Cape Town (UCT) Honours students and the Bhabhisana Baby
+        Project to co-design You and Your Baby.The previous web system was developed using WordPress. WordPress allows users to create, manage and publish digital content such as text, images and videos.
       </p>
         <!-- <img src="assets/img/portfolio/archportal.png" class="sixty" alt=""> -->
-      <p><b>The key features of the system were:</b></p>
+      <p><b>The key features of the web system were:</b></p>
       <ul>
         <li>The staff-facing web portal performed the functionality of allowing web portal users to create and manage content and users, emphasising content assignment functionality.</li>
         <li>The user-facing web application allows users to authenticate, view content based on categories and languages, and access assigned content. The mobile application was designed to have responsiveness, usability, and coherent branding features. </li>
@@ -97,6 +99,7 @@
         the project’s iterative development and hold ourselves accountable
         to complete our tasks. This was important as the nature of the
         project divisions was highly coupled.</p>
+      <p>We adopted the process of co-design in order to continue the developement of this system. The goal was to engage stakeholders, including BBP staff and beneficiaries, in refining and evaluating software for maternal and child health. Co-design involved communication and workshops. The Sweetwaters community also participated to assess the system's performance in a different context. Data, such as feedback and preferences, was collected during these sessions. Participants provided informed consent for audio, photo, or video recordings at the start of each workshop.</p>
         
       <!-- <h2>Authenticate Users</h2>
         <p>All users can login via the "User Login" button which allows them to securely log into the WordPress website.</p>
@@ -107,10 +110,18 @@
       <h2>Displaying ECD Content Pages</h2>
       <p>Each non-public ECD Content post is only displayed to that User if they are assigned it.</p> -->
 
-      <h1>Results</h1>
+      <h1>Findings</h1>
       <p>The new system was built using the Django framework, featuring a Model-View-Template (MVT) pattern and Object-Relational Mapping (ORM) layer. The system's architecture is divided into apps, each with specific functionality, and the user interface is created using HTML templates and Bootstrap. The system emphasizes user authentication, security, and database design, using a PostgreSQL database and Django's ORM. The system is currently hosted on a Unix server with Apache and Docker containers.</p>
       <p>The usability tests conducted throughout the project confirmed that the primary design objective of creating a user-centric system was achieved. Feedback from BBP staff participating in these tests indicated that the new web portal is a significant improvement over the previous one. They described it as more intuitive, with a cleaner and simpler interface, and one staff member even praised its appearance and ease of use.</p>
-  </section><!-- End Hero -->
+      <p>Functional requirements, including content creation, user management, and authentication, have been met. Non-functional requirements like maintainability, portability, scalability, reusability, interoperability, reliability, usability, and responsiveness have mostly been fulfilled. However, portability and availability face issues due to server restrictions. The issue was that the new web system built was not compatible with the organisation's existing server setup.
+      </p>
+      <p>To mitigate the portability issue, migrating to a different server had been suggested, but it has been decided that it will be hosted on the UCT network.
+      </p> 
+      <p>The usability and user experience were validated through usability tests, with positive feedback from BBP staff, indicating improved usability and a more intuitive interface. However, they expressed a desire for a more colorful user interface, the ability to identify content formats, and a search feature.
+      </p>
+       <p> For the Sweetwaters engagement, only the web application component was deployed. Participants in this context expressed interest in uploading and downloading videos and contributing content. They preferred more vibrant and colorful theme designs for both web and mobile applications.</p>
+      </p>
+      </section><!-- End Hero -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
